@@ -37,6 +37,13 @@ console.log(imageEl.getAttribute('src'));
 /*
  * Data-атрибуты
  */
-const actions = document.querySelectorAll('.js-actions .button');
-//console.log('actions', actions);
-console.log('actions2', actions[0].dataset.actions);
+const actions = document.querySelectorAll('.js-actions button');
+console.log('actions', actions);
+console.log('actions2', actions[0].dataset.action);
+//то же самое длиннее:
+console.log('actions3', actions[2].getAttribute('data-action'));
+
+const inputEl = document.querySelector('.js-input');
+console.log('inputEl', inputEl.value);
+inputEl.value = 'hgjh'
+
